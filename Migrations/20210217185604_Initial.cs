@@ -13,7 +13,9 @@ namespace OnlineBooks.Migrations
                     BookId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(nullable: false),
-                    Author = table.Column<string>(nullable: false),
+                    AuthorFirstName = table.Column<string>(nullable: false),
+                    AuthorMiddleName = table.Column<string>(nullable: true),
+                    AuthorLastName = table.Column<string>(nullable: false),
                     Publisher = table.Column<string>(nullable: false),
                     Isbn = table.Column<string>(nullable: false),
                     Classification = table.Column<string>(nullable: false),

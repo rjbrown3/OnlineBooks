@@ -14,6 +14,6 @@ namespace OnlineBooks.Models
             _context = context;     //update context
         }
 
-        public IQueryable<Books> Books => _context.Books;       //add books to IQueryable list
+        public IQueryable<Book> Books => _context.Books;       //add books to IQueryable list
     }
 }

@@ -7,6 +7,6 @@ namespace OnlineBooks.Models
 {
     public interface IBooksRespository
     {
-        IQueryable<Books> Books { get; }        //Can get an IQueryable list of books from the repository
+        IQueryable<Book> Books { get; }        //Can get an IQueryable list of books from the repository
     }
 }

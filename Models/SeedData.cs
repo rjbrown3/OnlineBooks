@@ -24,10 +24,11 @@ namespace OnlineBooks.Models
             {
                 context.Books.AddRange(
 
-                    new Books
+                    new Book
                     {
                         Title = "Les Miserables",
-                        Author = "Victor Hugo",
+                        AuthorFirstName = "Victor",
+                        AuthorLastName = "Hugo",
                         Publisher = "Signet",
                         Isbn = "978-0451419439",
                         Classification = "Fiction",
@@ -35,10 +36,12 @@ namespace OnlineBooks.Models
                         Price = new decimal(9.95)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "Team of Rivals",
-                        Author = "Doris Kearns Goodwin",
+                        AuthorFirstName = "Doris",
+                        AuthorMiddleName = "Kearns",
+                        AuthorLastName = "Goodwin",
                         Publisher = "Simon & Schuster",
                         Isbn = "978-0743270755",
                         Classification = "Non-Fiction",
@@ -46,10 +49,11 @@ namespace OnlineBooks.Models
                         Price = new decimal(14.58)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "The Snowball",
-                        Author = "Alice Schroeder",
+                        AuthorFirstName = "Alice",
+                        AuthorLastName = "Schroeder",
                         Publisher = "Bantam",
                         Isbn = "978-0553384611",
                         Classification = "Non-Fiction",
@@ -57,10 +61,12 @@ namespace OnlineBooks.Models
                         Price = new decimal(21.54)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "American Ulysses",
-                        Author = "Ronald C. White",
+                        AuthorFirstName = "Ronald",
+                        AuthorMiddleName = "C",
+                        AuthorLastName = "White",
                         Publisher = "Random House",
                         Isbn = "978-0812981254",
                         Classification = "Non-Fiction",
@@ -68,10 +74,11 @@ namespace OnlineBooks.Models
                         Price = new decimal(11.61)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "Unbroken",
-                        Author = "Laura Hillenbrand",
+                        AuthorFirstName = "Laura",
+                        AuthorLastName = "Hillenbrand",
                         Publisher = "Random House",
                         Isbn = "978-0812974492",
                         Classification = "Non-Fiction",
@@ -79,10 +86,11 @@ namespace OnlineBooks.Models
                         Price = new decimal(13.33)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "The Greate Train Robbery",
-                        Author = "Michael Crichton",
+                        AuthorFirstName = "Michael",
+                        AuthorLastName = "Crichton",
                         Publisher = "Vintage",
                         Isbn = "978-0804171281",
                         Classification = "Fiction",
@@ -90,10 +98,11 @@ namespace OnlineBooks.Models
                         Price = new decimal(15.95)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "Deep Work",
-                        Author = "Cal Newport",
+                        AuthorFirstName = "Cal",
+                        AuthorLastName = "Newport",
                         Publisher = "Grand Central Publishing",
                         Isbn = "978-1455586691",
                         Classification = "Non-Fiction",
@@ -101,10 +110,11 @@ namespace OnlineBooks.Models
                         Price = new decimal(14.99)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "It's Your Ship",
-                        Author = "Michael Abrashoff",
+                        AuthorFirstName = "Michael",
+                        AuthorLastName = "Abrashoff",
                         Publisher = "Grand Central Publishing",
                         Isbn = "978-1455523023",
                         Classification = "Non-Fiction",
@@ -112,21 +122,23 @@ namespace OnlineBooks.Models
                         Price = new decimal(21.66)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "The Virgin Way",
-                        Author = "Richard Branson",
-                        Publisher = "Portfolio",
+                        AuthorFirstName = "Richard",
+                        AuthorLastName = "Branson"
+,                        Publisher = "Portfolio",
                         Isbn = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
                         Price = new decimal(29.16)
                     },
 
-                    new Books
+                    new Book
                     {
                         Title = "Sycamore Row",
-                        Author = "John Grisham",
+                        AuthorFirstName = "John",
+                        AuthorLastName = "Grisham",
                         Publisher = "Bantam",
                         Isbn = "978-0553393613",
                         Classification = "Fiction",

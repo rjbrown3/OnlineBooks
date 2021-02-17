@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineBooks.Models
 {
-    public class Books
+    public class Book
     {
         [Required]
         [Key]
@@ -14,7 +14,10 @@ namespace OnlineBooks.Models
         [Required]
         public string Title { get; set; }
         [Required]
-        public string Author { get; set; }
+        public string AuthorFirstName { get; set; }
+        public string AuthorMiddleName { get; set; }
+        [Required]
+        public string AuthorLastName { get; set; }
         [Required]
         public string Publisher { get; set; }
         [Required]
