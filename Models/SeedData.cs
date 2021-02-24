@@ -33,7 +33,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-0451419439",
                         Classification = "Fiction",
                         Category = "Classic",
-                        Price = new decimal(9.95)
+                        Price = new decimal(9.95),
+                        NumPages = 1488
                     },
 
                     new Book
@@ -46,7 +47,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-0743270755",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = new decimal(14.58)
+                        Price = new decimal(14.58),
+                        NumPages = 944
                     },
 
                     new Book
@@ -58,7 +60,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-0553384611",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = new decimal(21.54)
+                        Price = new decimal(21.54),
+                        NumPages = 832
                     },
 
                     new Book
@@ -71,7 +74,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-0812981254",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = new decimal(11.61)
+                        Price = new decimal(11.61),
+                        NumPages = 864
                     },
 
                     new Book
@@ -83,7 +87,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-0812974492",
                         Classification = "Non-Fiction",
                         Category = "Historical",
-                        Price = new decimal(13.33)
+                        Price = new decimal(13.33),
+                        NumPages = 528
                     },
 
                     new Book
@@ -95,7 +100,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-0804171281",
                         Classification = "Fiction",
                         Category = "Historical Fiction",
-                        Price = new decimal(15.95)
+                        Price = new decimal(15.95),
+                        NumPages = 288
                     },
 
                     new Book
@@ -107,7 +113,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-1455586691",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = new decimal(14.99)
+                        Price = new decimal(14.99),
+                        NumPages = 304
                     },
 
                     new Book
@@ -119,7 +126,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-1455523023",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = new decimal(21.66)
+                        Price = new decimal(21.66),
+                        NumPages = 240
                     },
 
                     new Book
@@ -131,7 +139,8 @@ namespace OnlineBooks.Models
                         Isbn = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
-                        Price = new decimal(29.16)
+                        Price = new decimal(29.16),
+                        NumPages = 400
                     },
 
                     new Book
@@ -143,7 +152,47 @@ namespace OnlineBooks.Models
                         Isbn = "978-0553393613",
                         Classification = "Fiction",
                         Category = "Thrillers",
-                        Price = new decimal(15.03)
+                        Price = new decimal(15.03),
+                        NumPages = 642
+                    },
+
+                    new Book
+                    {
+                        Title = "The Awakening",
+                        AuthorFirstName = "Kate",
+                        AuthorLastName = "Chopin",
+                        Publisher = "Herbert S. Stone & Co.",
+                        Isbn = "978-0312062354",
+                        Classification = "Fiction",
+                        Category = "Classic",
+                        Price = new decimal(5.99),
+                        NumPages = 303
+                    },
+
+                    new Book
+                    {
+                        Title = "And Then There Were None",
+                        AuthorFirstName = "Agatha",
+                        AuthorLastName = "Christie",
+                        Publisher = "Collins Crime Club",
+                        Isbn = "978-0062325549",
+                        Classification = "Fiction",
+                        Category = "Mystery",
+                        Price = new decimal(7.99),
+                        NumPages = 272
+                    },
+
+                    new Book
+                    {
+                        Title = "The Joy Luck Club",
+                        AuthorFirstName = "Amy",
+                        AuthorLastName = "Tan",
+                        Publisher = "G. P. Putnam's Sons",
+                        Isbn = "978-0143038092",
+                        Classification = "Fiction",
+                        Category = "Novel",
+                        Price = new decimal(11.98),
+                        NumPages = 288
                     }
 
                 );

@@ -2,30 +2,34 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model IQueryable<Book>
+@model BookListViewModel
 
-<div class="bg-secondary">
 
-    <br />
-    <header class="text-center">
-        <h1 class="display-1 text-white-50">Online Books</h1>
-    </header>
-    <br />
 
-    @foreach (var x in Model)       //iterate through each book in the database
-    {
-        <div class="card card-outline-primary m-4 p-4 text-center">
-            <div class="bg-light p-4">
-                <br />
-                <h4>@x.Title</h4>
-                <p>Author: @x.AuthorFirstName @x.AuthorMiddleName @x.AuthorLastName</p>
-                <p>Publisher: @x.Publisher</p>
-                <p>ISBN: @x.Isbn</p>
-                <p>Classification: @x.Classification</p>
-                <p>Category: @x.Category</p>
-                <p class="badge badge-pill badge-secondary">Price: $@x.Price</p>
+@foreach (var x in Model.Books)       //iterate through each book in the database
+{
+    <div class="card card-outline-primary m-4 p-4 text-center">
+        <div class="container-fluid p-4" style="background-color: #a9a9b9;">   <!--Bootstrap command 1: container-fluid-->
+            <div class="container m-2 p-2" style="background-color: whitesmoke;">    <!--Bootstrap command 2: container-->
+                    <h4>@x.Title</h4>
             </div>
+            
+            <ul class="list-inline">     <!--Bootstrap command 3: list-inline-->
+                <li class="list-inline-item m-2"><span style="font-weight:bold">Author:</span> @x.AuthorFirstName @x.AuthorMiddleName @x.AuthorLastName</li>
+                <li class="list-inline-item m-2"><span style="font-weight:bold">Publisher:</span> @x.Publisher</li>
+                <li class="list-inline-item m-2"><span style="font-weight:bold">ISBN:</span> @x.Isbn</li>
+                <li><span style="font-weight:bold">Classification:</span> @x.Classification</li>
+                <li><span style="font-weight:bold">Category:</span> @x.Category</li>
+                <li><span style="font-weight:bold">Number of Pages:</span> @x.NumPages</li>
+            </ul>
+            <span class="badge badge-pill badge-light">Price: $@x.Price</span>
+            
         </div>
-    }
+    </div>
+}
 
+<div page-model="Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
+        page-class-normal="btn-outline-dark"
+        page-class-selected="btn-primary"
+        class="btn-group pull-right m-1 text-center">
 </div>

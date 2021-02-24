@@ -29,5 +29,7 @@ namespace OnlineBooks.Models
         public string Category { get; set; }
         [Required]
         public decimal Price { get; set; }
+        [Required]
+        public int NumPages { get;set; }
     }
 }
