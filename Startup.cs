@@ -69,6 +69,10 @@ namespace OnlineBooks
                     "{category}",
                     new { Controller = "Home", action = "Index", page = 1 });
 
+                endpoints.MapControllerRoute("books",
+                    "{Books}/{category}",
+                    new { Controller = "Home", action = "Index", page = 1 });
+
                 endpoints.MapControllerRoute(       //change URLs so that user can access the next page by typing /P2, /P3, etc.
                     "pagination",
                     "/P{page}",
