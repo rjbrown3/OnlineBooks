@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 
-<body class="bg-secondary">
+<body class="bg-light">
 
     <div class="container">
         <br />
         <header class="text-center">
-            <h1 class="display-1 text-white-50">Online Books</h1>
+            <h1 class="display-1 text-dark">Online Books</h1>
+            <vc:navigation-menu />
         </header>
 
         @RenderBody()
 
+        <div page-model="Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
+             page-class-normal="btn-outline-dark"
+             page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
+             class="btn-group pull-right m-1 text-center text-dark">
+        </div>
     </div>
+
 
 </body>
 </html>

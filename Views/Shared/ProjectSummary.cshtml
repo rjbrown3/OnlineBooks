@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Book
+
+<div class="card card-outline-primary m-4 p-4 text-center">
+    <div class="container-fluid p-4" style="background-color: #a9a9b9;">
+        <!--Bootstrap command 1: container-fluid-->
+        <div class="container m-2 p-2" style="background-color: whitesmoke;">
+            <!--Bootstrap command 2: container-->
+            <h4>@Model.Title</h4>
+        </div>
+
+        <ul class="list-inline">
+            <!--Bootstrap command 3: list-inline-->
+            <li class="list-inline-item m-2"><span style="font-weight:bold">Author:</span> @Model.AuthorFirstName @Model.AuthorMiddleName @Model.AuthorLastName</li>
+            <li class="list-inline-item m-2"><span style="font-weight:bold">Publisher:</span> @Model.Publisher</li>
+            <li class="list-inline-item m-2"><span style="font-weight:bold">ISBN:</span> @Model.Isbn</li>
+            <li><span style="font-weight:bold">Classification:</span> @Model.Classification</li>
+            <li><span style="font-weight:bold">Category:</span> @Model.Category</li>
+            <li><span style="font-weight:bold">Number of Pages:</span> @Model.NumPages</li>
+        </ul>
+        <span class="badge badge-pill badge-light">Price: $@Model.Price</span>
+
+    </div>
+</div>
