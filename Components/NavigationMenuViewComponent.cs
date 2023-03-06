@@ -20,10 +20,12 @@ namespace OnlineBooks.Components
         {
             ViewBag.SelectedType = RouteData?.Values["category"];
 
-            return View(repository.Books
+            var categories = repository.Books
                 .Select(b => b.Category)
                 .Distinct()
-                .OrderBy(b => b));
+                .OrderBy(b => b);
+
+            return View(categories);
         }
     }
 }
